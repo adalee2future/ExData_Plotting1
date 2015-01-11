@@ -14,7 +14,12 @@ subdata$DateTime <- strptime(subdata$DateTime, "%d/%m/%Y %H:%M:%S")
 ## Global_active_power
 gap <- subdata$Global_active_power
 datetime <- subdata$DateTime
+
 ## plot
-plot(datetime, gap, type = "n", ylab = "Global Active Power (kilowatts)")
+png(filename = "plot2.png")
+plot(datetime, gap, type = "n", xlab = "", ylab = "Global Active Power (kilowatts)")
 lines(datetime, gap)
+dev.off()
+
+
 
