@@ -24,7 +24,7 @@ sm3 <- subdata$Sub_metering_3
 png(file = "plot4.png")
 par(mfrow = c(2, 2))
 ## plot 1
-plot(datetime, gap, type = "n", xlab = "", ylab = "Global Active Power (kilowatts)")
+plot(datetime, gap, type = "n", xlab = "", ylab = "Global Active Power")
 lines(datetime, gap)
 ## plot 2
 plot(datetime, Voltage, type = "n")
