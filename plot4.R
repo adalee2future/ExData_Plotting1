@@ -36,7 +36,7 @@ lines(datetime, sm1, type = "l", col = "black")
 lines(datetime, sm2, type = "l", col = "red")
 lines(datetime, sm3, type = "l", col = "blue")
 legend("topright", lwd = 1, col = c("black", "red", "blue"), 
-       legend = c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"))
+       legend = c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), bty = "n")
 
 ## plot 4
 plot(datetime, Global_reactive_power, type = "n")
